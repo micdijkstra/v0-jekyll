@@ -1,0 +1,36 @@
+button,
+input[type=submit],
+.btn {
+  @include t-base;
+  background: none;
+  border: 2px solid $color-base;
+  border-radius: 0;
+  color: $color-base;
+  display: inline-block;
+  font-size: $text-xs;
+  height: $input-height;
+  line-height: $input-height - 2px;
+  padding: 0 15px;
+  text-decoration: none !important;
+  transition: all 0.15s ease-in-out;
+  width: auto;
+
+  &,
+  &:visited,
+  &:disabled,
+  &:focus,
+  &:active,
+  &.active {
+    border-color: $color-base;
+    box-shadow: none !important;
+    color: $color-base;
+    outline: none !important;
+    text-decoration: none !important;
+  }
+
+  &:hover {
+    background: $color-base;
+    color: $color-inverted;
+    text-decoration: none !important;
+  }
+}

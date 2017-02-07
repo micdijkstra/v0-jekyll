@@ -1,0 +1,38 @@
+html {
+}
+
+body {
+  @include t-base;
+  background: $color-bg-base;
+  color: $color-base;
+  font-size: $text-xxs;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  @include t-base;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+}
+
+a {
+  color: $color-base;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:visited,
+  &:hover {
+    outline: 0;
+    color: $color-base;
+    text-decoration: none;
+  }
+}
